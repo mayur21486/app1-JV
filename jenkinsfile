@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+       maven 'MavenForApp1'    
+    }
 
     stages {
         stage('Test Code - Jenkins files') {
