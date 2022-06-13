@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Test Code - Jenkins files') {
+            steps {
+                //mvn test
+            }
+        }
+    
+    
+        stage('Build Stage') {
+            steps {
+                echo 'Build by script'
+            }
+        }
+        
+        stage('Deploy on Test Box') {
+            steps {
+                echo 'Code has deployed on Test Box'
+            }
+        }
+        
+        stage('Deploy on Prod Box') {
+            steps {
+                echo 'Code has deployed on Test Box'
+            }
+        }
+    }
+}
