@@ -1,15 +1,15 @@
 pipeline {
   agent any
   stages {
-    stage('First Stage of pipline as code') {
+    stage('Test Code') {
       steps {
-        echo 'This is first Pipline as code by script'
+        // mvn test
       }
     }
 
     stage('Build Stage') {
       steps {
-        echo 'Build by script'
+        // mvn install
       }
     }
 
