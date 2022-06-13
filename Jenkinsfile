@@ -7,6 +7,7 @@ pipeline {
     stage('Test Code') {
       steps {
         // mvn test
+        sh mvn test
       }
     }
 
