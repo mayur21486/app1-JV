@@ -1,8 +1,8 @@
 pipeline {
   agent any
-  tools {
+   tools {
     maven 'MavenForApp1'
-  }
+     }
   stages {
     stage('Test Code') {
       steps {
